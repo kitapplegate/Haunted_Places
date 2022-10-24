@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 
 ## Happy Halloween!
 
-```{r read and libraries, message=FALSE, warning=FALSE, include=FALSE}
+```{r read and libraries, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 library(tidyverse)
 library(geojsonio)
 library(RColorBrewer)
@@ -38,7 +38,7 @@ centers <- cbind.data.frame(data.frame(gCentroid(spdf, byid=TRUE), id=spdf@data$
 
 ```
 
-```{r wrangle and explore, message=FALSE, warning=FALSE, include=FALSE}
+```{r wrangle and explore, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 
 
 ghost.count <- places %>%
@@ -48,7 +48,7 @@ ghost.count <- places %>%
 
 ```
 
-```{r viz, echo=FALSE, message=FALSE, warning=FALSE}
+```{r viz, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 
 library(viridis)
 my_palette <- rev(magma(8))[c(-1,-8)]
