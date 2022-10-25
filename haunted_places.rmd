@@ -2,7 +2,7 @@
 title: "Haunted Places"
 author: "Kit Applegate"
 date: '2022-10-24'
-output: gitub_document
+output: 
 ---
 
 ```{r setup, include=FALSE}
